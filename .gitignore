@@ -47,3 +47,6 @@ app.*.map.json
 
 # Rust build artifacts
 rust/target/
+
+# Local pub overrides (path dep for local dev, not for publishing)
+pubspec_overrides.yaml

@@ -8,7 +8,3 @@ linter:
 analyzer:
   exclude:
     - "lib/src/rust/**"
-  errors:
-    # rust_lib_bls_dart uses a path dep during local development.
-    # Before publishing, change it to the hosted dep (^0.0.1) — see README.
-    invalid_dependency: ignore

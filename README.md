@@ -100,17 +100,15 @@ MIT — see [LICENSE](LICENSE).
 
 ## Publishing (maintainers)
 
-bls_dart uses a two-package publish flow because `rust_lib_bls_dart` (the cargokit native build plugin) must be a separate pub.dev package:
+bls_dart uses a two-package publish flow because `rust_lib_bls_dart` (the cargokit native build plugin) must be on pub.dev first.
+
+Local development uses a gitignored `pubspec_overrides.yaml` that redirects to `path: rust_builder`.
+The committed `pubspec.yaml` always declares the hosted dep — so no file edits are needed before publishing.
 
 ```bash
 # Step 1 — publish the native builder sub-package
-cd rust_builder
-flutter pub publish
+cd rust_builder && flutter pub publish
 
-# Step 2 — change the path dep to hosted in the root pubspec.yaml:
-#   rust_lib_bls_dart: ^0.0.1
-
-# Step 3 — publish the main package
-cd ..
-flutter pub publish
+# Step 2 — publish the main package
+cd .. && flutter pub publish
 ```

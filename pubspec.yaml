@@ -20,11 +20,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # During local development this is a path dep.
-  # Before publishing bls_dart, publish rust_lib_bls_dart first,
-  # then change this to: rust_lib_bls_dart: ^0.0.1
-  rust_lib_bls_dart:
-    path: rust_builder
+  rust_lib_bls_dart: ^0.0.1
   flutter_rust_bridge: ^2.11.1
 
 dev_dependencies:
