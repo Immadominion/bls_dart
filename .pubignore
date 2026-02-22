@@ -1,0 +1,31 @@
+# Exclude app scaffold directories (needed for integration tests, not for consumers)
+
+android/
+ios/
+linux/
+macos/
+web/
+windows/
+
+# Integration test infrastructure
+
+integration_test/
+test_driver/
+test/
+
+# Development files
+
+.idea/
+.vscode/
+.metadata
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+
+# Rust source and build artifacts (native libs are precompiled by rust_builder)
+
+rust/target/
+
+# Build outputs
+
+build/
