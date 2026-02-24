@@ -2,7 +2,7 @@ name: rust_lib_bls_dart
 description: >-
   Native cargokit build helper for bls_dart.
   Compiles the blst BLS12-381 Rust library for Android, iOS, macOS, Linux and Windows.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/OpenSauceDev/walrus/tree/main/bls_dart
 repository: https://github.com/OpenSauceDev/walrus/tree/main/bls_dart
 environment:

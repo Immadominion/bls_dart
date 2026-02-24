@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Fixed: `rust_lib_bls_dart` dependency updated to ^0.0.2 which includes iOS/macOS podspecs and Android/Linux/Windows build configs missing from v0.0.1
+
 ## 0.1.0
 
 - Initial release.

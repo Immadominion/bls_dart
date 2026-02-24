@@ -1,2 +1,11 @@
 .dart_tool/
 build/
+
+# Override parent .pubignore which excludes platform dirs.
+# rust_lib_bls_dart MUST ship these — they contain podspecs,
+# CMakeLists, and Gradle configs that Flutter needs for native builds.
+!android/
+!ios/
+!linux/
+!macos/
+!windows/
